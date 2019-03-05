@@ -8,7 +8,7 @@ RUN apk add --no-cache --update build-base \
                                 nodejs \
                                 tzdata
 
-RUN mkdir /var/www/app
+RUN mkdir -p /var/www/app/
 WORKDIR /var/www/app
 COPY Gemfile /var/www/app/Gemfile
 COPY Gemfile.lock /var/www/app/Gemfile.lock

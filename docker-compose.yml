@@ -7,7 +7,7 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
   mysql:
-    image: mysql:alpine
+    image: mysql
     volumes:
       - mysql-data:/var/lib/mysql
     ports:
