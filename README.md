@@ -1,24 +1,24 @@
-# README
+# Rails-docker-quick
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Excelente base for start a rails application for development environment, use image based on Ruby Alpine and contains Redis, MYSQL and PostgreSQL images for connect your app, for default use PostgreSQL.
 
-Things you may want to cover:
+## Check it out!
 
-* Ruby version
+```sh
+git clone git@github.com:jericu/rails-docker-quick.git
+cd rails-docker-quick
+```
 
-* System dependencies
+Build the project:
 
-* Configuration
+```sh
+docker-compose build
+docker-compose run web rake db:create db:migrate
+docker-compose up -d 
+```
 
-* Database creation
+check the application [http://0.0.0.0:3000/][local] 
 
-* Database initialization
+## Enjoy and start to development
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[local]: <http://0.0.0.0:3000/>
